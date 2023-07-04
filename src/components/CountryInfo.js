@@ -1,13 +1,12 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
-import { showCountry } from '.././redux/Countrynpm i uuid/countrySlice';
 import { v4 as uuidv4 } from 'uuid';
 import { BiSolidChevronLeft } from 'react-icons/bi';
+import { showCountry } from '../redux/Country/countrySlice';
 
 function CountryInfo() {
-  const [countryInfo, isLoading] = useSelector((store) => store.country);
+  const { countryInfo, isLoading } = useSelector((store) => store.country);
   const dispatch = useDispatch();
   const { countryCode } = useParams();
   const navigate = useNavigate();
@@ -20,6 +19,7 @@ function CountryInfo() {
     return <div>loading.......</div>;
   }
 
+  console.log(countryInfo);
   return (
     <>
       <BiSolidChevronLeft
