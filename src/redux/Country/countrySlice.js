@@ -16,7 +16,7 @@ export const fetchCountries = createAsyncThunk(
     } catch (error) {
       return error;
     }
-  }
+  },
 );
 
 export const showCountry = createAsyncThunk(
@@ -24,13 +24,13 @@ export const showCountry = createAsyncThunk(
   async (code) => {
     try {
       const response = await fetch(
-        `https://restcountries.com/v3.1/alpha/${code}`
+        `https://restcountries.com/v3.1/alpha/${code}`,
       );
       return response.json();
     } catch (error) {
       return error.message;
     }
-  }
+  },
 );
 
 const countrySlice = createSlice({
@@ -39,10 +39,10 @@ const countrySlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchCountries.pending, (state) => {
-        state.isLoading = true;
+        const newState = { ...state, isLoading: true };
+        return newState;
       })
       .addCase(fetchCountries.fulfilled, (state, action) => {
-        state.isLoading = false;
         const countries = action.payload.sort((a, b) => {
           const countryA = a.name.common.toLowerCase();
           const countryB = b.name.common.toLowerCase();
@@ -54,14 +54,18 @@ const countrySlice = createSlice({
           }
           return 0;
         });
-        state.countries = countries;
+
+        const newState = { ...state, countries, isLoading: false };
+        return newState;
       })
       .addCase(showCountry.pending, (state) => {
-        state.isLoading = true;
+        const newState = { ...state, isLoading: true };
+        return newState;
       })
       .addCase(showCountry.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.countryInfo = action.payload;
+        const countryInfo = action.payload;
+        const newState = { ...state, countryInfo, isLoading: false };
+        return newState;
       });
   },
 });
