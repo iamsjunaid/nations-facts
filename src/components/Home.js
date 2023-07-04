@@ -5,18 +5,17 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 import Country from './Country';
 
 function Home() {
-  const [ countries, isLoading, error ] = useSelector((store) => store.country);
+  const { countries, isLoading, error } = useSelector((store) => store.country);
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
-  const filtered = countries.filter((country) =>
-    country.region.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = countries
+    .filter((country) => country.name.common.toLowerCase().includes(search.toLowerCase()));
 
   if (isLoading) {
     return <div>loading...</div>;
   }
   if (error) {
-    return <div>Error loading!</div>;
+    return <div>An error occured!</div>;
   }
 
   const handleChange = (e) => {
@@ -24,13 +23,13 @@ function Home() {
   };
   return (
     <>
-      <div className="search-Region">
+      <div className="search-bar">
         <input
           type="text"
           name="search"
           value={search}
           className="input-field"
-          placeholder="search eg:Europe"
+          placeholder="search eg:India"
           onChange={(e) => handleChange(e)}
         />
         <button type="button" className="btn">
