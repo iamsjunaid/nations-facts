@@ -13,6 +13,11 @@ button {
   border: 0;
 }
 
+.input-field {
+  font-size: 1.5em;
+  color: #fff;
+}
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
