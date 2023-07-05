@@ -23,7 +23,7 @@
 
 .search-bar {
   display: flex;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
 }
 
