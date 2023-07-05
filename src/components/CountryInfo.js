@@ -32,7 +32,7 @@ function CountryInfo() {
           </div>
           <ul className="country-info">
             <img className="country-flag" src={country.flags.png} alt="flag" />
-            <h4>{country.name.official}</h4>
+            <h2>{country.name.official}</h2>
             <li className="list-item">
               <span className="title">Capital</span>
               <span className="description">{country.capital}</span>
@@ -63,6 +63,7 @@ function CountryInfo() {
                   .map((lang) => (
                     <span key={uuidv4()} className="description lang">
                       {lang}
+                      &nbsp;
                     </span>
                   ))}
               </div>
