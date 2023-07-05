@@ -27,7 +27,7 @@
 
 # 📖 Nations Facts <a name="about-project"></a>
 
-**Nations Facts** In this project, I have worked on an external API that shows various countries along with their statistical data. It consists of a homepage that shows a list of the countries .When clicked on a country, it shows the details of the selected country. 
+**Nations Facts** In this project, I have worked on an external API showing various countries and their statistical data. It consists of a homepage that shows a list of the nations. When clicked on a country, it shows the details of the selected country.
       
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -183,7 +183,7 @@ If you like this project you can give a Star at project's [GitHub page](https://
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and the code reviewers for making this project better.
+I would like to thanks [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the design inspiration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
