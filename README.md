@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Nations Facts <a name="about-project"></a>
+# 📖 About the Project <a name="about-project"></a>
 
 **Nations Facts** In this project, I have worked on an external API showing various countries and their statistical data. It consists of a homepage that shows a list of the nations. When clicked on a country, it shows the details of the selected country.
       
