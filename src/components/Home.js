@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { BiRightArrowAlt } from 'react-icons/bi';
+import { BiSearch } from 'react-icons/bi';
 import Country from './Country';
+import '../styles/Home.css';
 
 function Home() {
   const { countries, isLoading, error } = useSelector((store) => store.country);
@@ -33,12 +34,12 @@ function Home() {
           onChange={(e) => handleChange(e)}
         />
         <button type="button" className="btn">
-          search
+          <BiSearch className="bi-search" />
         </button>
       </div>
       <div className="container">
         {filtered.length < 1 && (
-          <h2 className="Wrong-search">No results found</h2>
+          <h2 className="search-error">No results found</h2>
         )}
         {filtered.map((country) => (
           <div
@@ -53,7 +54,6 @@ function Home() {
             tabIndex={0}
             role="button"
           >
-            <BiRightArrowAlt className="arrow-right" />
             <Country
               name={country.name.common}
               flag={country.flags.png}

@@ -1,3 +1,8 @@
+:root {
+  --dark-blue: #35548b;
+  --light-blue: #5687e2;
+}
+
 body {
   margin: 0;
   font-family:
@@ -14,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
 }
 
 code {
