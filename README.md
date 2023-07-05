@@ -7,6 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [🚀 Live Demo](#live-demo)
+- [🎥 Walkthrough Video](#walkthrough-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -80,6 +81,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://nations-facts.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Walkthrough Video <a name="walkthrough-video"></a>
+
+- [Walkthrough Video Link](https://youtu.be/3sBy_mB1Bbo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
