@@ -1,0 +1,43 @@
+.country-container {
+  background-color: var(--light-blue);
+}
+
+.name-backkey-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-info {
+  padding: 0 !important;
+  text-align: center;
+}
+
+.country-flag {
+  width: 200px;
+}
+
+.country-info li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.country-info li:nth-of-type(odd) {
+  background-color: var(--dark-blue);
+}
+
+.country-info li:hover,
+.country-info li:nth-of-type(odd):hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.description {
+  color: #fff;
+}
+
+.country-info li:hover .description {
+  color: #000;
+}

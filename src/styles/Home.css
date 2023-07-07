@@ -1,0 +1,63 @@
+.search-bar {
+  border-bottom: 1px solid #fff;
+  align-items: center;
+  width: 70%;
+  margin: 1em auto;
+  padding: 0.5em;
+  justify-content: space-between;
+}
+
+.search-bar input,
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.input-field {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.bi-search {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+}
+
+.country-card {
+  background-color: var(--light-blue);
+  padding-top: 10px;
+}
+
+.country-card:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
