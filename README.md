@@ -86,7 +86,7 @@
 
 ## 🎥 Walkthrough Video <a name="walkthrough-video"></a>
 
-- [Walkthrough Video Link](https://youtu.be/3sBy_mB1Bbo)
+- [Walkthrough Video Link](https://youtu.be/yNGYWpjS2co)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
